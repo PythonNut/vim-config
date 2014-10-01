@@ -25,7 +25,7 @@ call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
 
-" enable line numbers and make them relative
+" Enable line numbers and make them relative
 set number
 set relativenumber
 
@@ -39,7 +39,12 @@ inoremap kj <Esc>
 set wildmenu
 set wildmode=longest:list,full
 
-" unleash the holy war on tabs
+" Unleash the holy war on tabs
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+" Enable the awesome solarized colorscheme
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
