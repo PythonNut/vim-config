@@ -10,6 +10,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'altercation/vim-colors-solarized'
 
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
@@ -24,7 +25,21 @@ call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
 
+" enable line numbers and make them relative
 set number
 set relativenumber
 
+" Map key chords because Esc is so annoying
+inoremap jj <Esc>
+inoremap kk <Esc>
+inoremap jk <Esc>
+inoremap kj <Esc>
 
+" Enable superior ex completion
+set wildmenu
+set wildmode=longest:list,full
+
+" unleash the holy war on tabs
+set expandtab
+set tabstop=2
+set shiftwidth=2
