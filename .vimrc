@@ -130,3 +130,5 @@ call unite#filters#sorter_default#use(['sorter_rank'])
 let g:unite_source_history_yank_enable = 1
 nnoremap <C-p> :Unite -start-insert source command history/yank window buffer register line file_rec/async<CR>
 
+" file associations
+autocmd BufNewFile,BufRead *.zsh setlocal filetype=zsh
