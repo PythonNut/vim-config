@@ -61,6 +61,7 @@ set undolevels=1000
 set history=1000
 set mouse=a
 set cursorline
+syntax on
 
 " Enable the awesome solarized colorscheme
 set background=dark
