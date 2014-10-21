@@ -61,6 +61,8 @@ set incsearch
 set undolevels=1000
 set history=1000
 set mouse=a
+set ttyfast
+set ttymouse=xterm2
 set cursorline
 syntax on
 
