@@ -45,6 +45,7 @@ inoremap kj <Esc>
 " Enable superior ex completion
 set wildmenu
 set wildmode=longest:list,full
+set tildeop
 
 " Unleash the holy war on tabs
 set expandtab
