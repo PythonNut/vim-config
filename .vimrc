@@ -35,6 +35,10 @@ NeoBundleCheck
 " Enable line numbers and make them relative
 set number
 set relativenumber
+set guioptions-=M
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
 
 " Map key chords because Esc is so annoying
 inoremap jj <Esc>
