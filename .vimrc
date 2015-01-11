@@ -49,6 +49,9 @@ inoremap kk <Esc>
 inoremap jk <Esc>
 inoremap kj <Esc>
 
+nmap [<Space>  O<Esc>
+nmap ]<Space>  o<Esc>
+
 " Enable superior ex completion
 set wildmenu
 set wildmode=longest:list,full
