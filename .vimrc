@@ -40,6 +40,9 @@ set guioptions-=m
 set guioptions-=T
 set guioptions-=r
 
+" Enable clipboard integration
+set clipboard=unnamedplus
+
 " Map key chords because Esc is so annoying
 inoremap jj <Esc>
 inoremap kk <Esc>
