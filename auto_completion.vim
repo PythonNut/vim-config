@@ -54,11 +54,5 @@ endif
 " use better perl matching
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
-" Unite.vim is like helm for emacs
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
-let g:unite_source_history_yank_enable = 1
-nnoremap <C-p> :Unite -start-insert source command history/yank window buffer register line file_rec/async<CR>
-
 " file associations
 autocmd BufNewFile,BufRead *.zsh setlocal filetype=zsh

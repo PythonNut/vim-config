@@ -83,3 +83,9 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 so ~/.vim/auto_completion.vim
+
+" Unite is to vim as Helm is to Emacs
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
+
+nnoremap <C-p> :Unite -start-insert source command window buffer register line file_rec/async<CR>
