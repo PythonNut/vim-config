@@ -76,6 +76,9 @@ set ttymouse=xterm2
 set cursorline
 syntax on
 
+set backupdir=~/.vim/backup,/tmp
+set directory=~/.vim/swap,/tmp
+"
 " Enable the awesome solarized colorscheme
 set background=dark
 let g:solarized_termcolors=256
