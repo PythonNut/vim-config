@@ -90,4 +90,4 @@ so ~/.vim/auto_completion.vim
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 
-nnoremap <C-p> :Unite -start-insert source command window buffer line file_rec/async<CR>
+nnoremap <C-k> :Unite -start-insert source command window buffer line file_rec/async<CR>
