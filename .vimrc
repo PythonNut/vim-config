@@ -32,7 +32,8 @@ set guioptions-=M
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r
-
+set guioptions-=L
+set guifont=DejaVu\ Sans\ Mono\ 11
 " Enable clipboard integration
 set clipboard=unnamedplus
 
