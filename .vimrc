@@ -18,6 +18,7 @@ NeoBundle 'auto-pairs'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'repeat.vim'
 NeoBundle 'sickill/vim-pasta'
+NeoBundle 'sheerun/vim-polyglot'
 
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
