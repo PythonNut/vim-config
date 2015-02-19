@@ -13,21 +13,14 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'EasyMotion'
 NeoBundle 'fugitive.vim'
-NeoBundle 'Shougo/neocomplete'
+if has('lua')
+  NeoBundle 'Shougo/neocomplete'
+endif
 NeoBundle 'auto-pairs'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'repeat.vim'
 NeoBundle 'sickill/vim-pasta'
 NeoBundle 'sheerun/vim-polyglot'
-
-NeoBundle 'Shougo/vimproc.vim', {
-      \ 'build' : {
-      \     'windows' : 'tools\\update-dll-mingw',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'unix' : 'make -f make_unix.mak',
-      \    },
-      \ }
 
 call neobundle#end()
 filetype plugin indent on
@@ -85,7 +78,9 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
-so ~/.vim/auto_completion.vim
+if has('lua')
+  so ~/.vim/auto_completion.vim
+endif
 
 " Unite is to vim as Helm is to Emacs
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
