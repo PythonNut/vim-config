@@ -12,7 +12,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'fugitive.vim'
+NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'easymotion/vim-easymotion'
 
 if has('lua')
