@@ -1,6 +1,7 @@
 set nocompatible
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
+let mapleader = "-"
 
 " Let NeoBundle manage NeoBundle
 " Required:
@@ -11,8 +12,9 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'EasyMotion'
 NeoBundle 'fugitive.vim'
+NeoBundle 'easymotion/vim-easymotion'
+
 if has('lua')
   NeoBundle 'Shougo/neocomplete'
 endif
@@ -73,7 +75,10 @@ syntax on
 
 set backupdir=~/.vim/backup,/tmp
 set directory=~/.vim/swap,/tmp
-"
+
+" Setup eastmotion
+nmap <Space> <Plug>(easymotion-prefix)
+
 " Enable the awesome solarized colorscheme
 set background=dark
 let g:solarized_termcolors=256
