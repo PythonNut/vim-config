@@ -20,9 +20,10 @@ if has('lua')
 endif
 NeoBundle 'auto-pairs'
 NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'repeat.vim'
+NeoBundle 'tpope/vim-repeat'
 NeoBundle 'sickill/vim-pasta'
 NeoBundle 'sheerun/vim-polyglot'
+NeoBundle 'justinmk/vim-sneak'
 
 call neobundle#end()
 filetype plugin indent on
@@ -92,3 +93,18 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 
 nnoremap <C-k> :Unite -start-insert source command window buffer line file_rec/async<CR>
+
+" Vim sneak
+nmap f <Plug>Sneak_f
+nmap F <Plug>Sneak_F
+xmap f <Plug>Sneak_f
+xmap F <Plug>Sneak_F
+omap f <Plug>Sneak_f
+omap F <Plug>Sneak_F
+nmap t <Plug>Sneak_t
+nmap T <Plug>Sneak_T
+xmap t <Plug>Sneak_t
+xmap T <Plug>Sneak_T
+omap t <Plug>Sneak_t
+omap T <Plug>Sneak_T
+let g:sneak#s_next = 1
