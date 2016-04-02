@@ -29,7 +29,6 @@ filetype plugin indent on
 NeoBundleCheck
 
 " Enable line numbers and make them relative
-set relativenumber
 set guioptions-=M
 set guioptions-=m
 set guioptions-=T
