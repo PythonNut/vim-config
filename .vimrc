@@ -77,7 +77,12 @@ set backupdir=~/.vim/backup,/tmp
 set directory=~/.vim/swap,/tmp
 
 " Setup eastmotion
+let g:EasyMotion_smartcase = 0
 nmap <Space> <Plug>(easymotion-prefix)
+nmap <Space>w <Plug>(easymotion-wl)
+nmap <Space>e <Plug>(easymotion-el)
+nmap <Space>b <Plug>(easymotion-bl)
+nmap <Space>ge <Plug>(easymotion-gel)
 
 " Enable the awesome solarized colorscheme
 set background=dark
