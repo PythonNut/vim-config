@@ -21,6 +21,7 @@ endif
 NeoBundle 'auto-pairs'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'tpope/vim-repeat'
+NeoBundle 'tpope/vim-rsi'
 NeoBundle 'sickill/vim-pasta'
 NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'justinmk/vim-sneak'
