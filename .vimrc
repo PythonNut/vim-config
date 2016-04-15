@@ -1,38 +1,37 @@
 if &compatible
   set nocompatible
 endif
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/.vim/bundle/'))
-let mapleader = "-"
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
+set runtimepath^=~/.vim/dein/repos/github.com/Shougo/dein.vim
+call dein#begin(expand('~/.vim/.cache/dein//'))
 
 " Install and load bundles
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'easymotion/vim-easymotion'
+call dein#add('tpope/vim-surround')
+call dein#add('scrooloose/nerdcommenter')
+call dein#add('Shougo/unite.vim')
+call dein#add('altercation/vim-colors-solarized')
+call dein#add('tpope/vim-fugitive')
+call dein#add('easymotion/vim-easymotion')
 
 if has('lua')
-  NeoBundle 'Shougo/neocomplete'
+  call dein#add('Shougo/neocomplete')
 endif
-NeoBundle 'auto-pairs'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'tpope/vim-repeat'
-NeoBundle 'tpope/vim-rsi'
-NeoBundle 'sickill/vim-pasta'
-NeoBundle 'sheerun/vim-polyglot'
-NeoBundle 'justinmk/vim-sneak'
+call dein#add('auto-pairs')
+call dein#add('terryma/vim-multiple-cursors')
+call dein#add('tpope/vim-repeat')
+call dein#add('tpope/vim-rsi')
+call dein#add('sickill/vim-pasta')
+call dein#add('sheerun/vim-polyglot')
+call dein#add('justinmk/vim-sneak')
 
-call neobundle#end()
+call dein#end()
+
+if dein#check_install()
+  call dein#install()
+endif
+
 filetype plugin indent on
-NeoBundleCheck
 
-" Enable line numbers and make them relative
+let mapleader = "-"
 set guioptions-=M
 set guioptions-=m
 set guioptions-=T
