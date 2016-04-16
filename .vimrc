@@ -22,6 +22,7 @@ call dein#add('tpope/vim-rsi')
 call dein#add('sickill/vim-pasta')
 call dein#add('sheerun/vim-polyglot')
 call dein#add('justinmk/vim-sneak')
+call dein#add('mbbill/undotree')
 
 call dein#end()
 
@@ -120,3 +121,9 @@ xmap T <Plug>Sneak_T
 omap t <Plug>Sneak_t
 omap T <Plug>Sneak_T
 let g:sneak#s_next = 1
+
+" Configure undo-system
+if has("persistent_undo")
+  set undodir=~/.vim/undo/
+  set undofile
+endif
