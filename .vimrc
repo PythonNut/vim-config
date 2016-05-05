@@ -78,6 +78,7 @@ syntax on
 
 set backupdir=~/.vim/backup,/tmp
 set directory=~/.vim/swap,/tmp
+set viminfo+=n~/.vim/.viminfo
 
 " Setup eastmotion
 let g:EasyMotion_smartcase = 0
