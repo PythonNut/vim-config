@@ -15,7 +15,7 @@ call dein#add('easymotion/vim-easymotion')
 if has('lua')
   call dein#add('Shougo/neocomplete')
 endif
-call dein#add('auto-pairs')
+call dein#add('vim-scripts/auto-pairs')
 call dein#add('terryma/vim-multiple-cursors')
 call dein#add('tpope/vim-repeat')
 call dein#add('tpope/vim-rsi')
