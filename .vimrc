@@ -20,7 +20,7 @@ call dein#begin(expand('~/.vim/.cache/dein//'))
 
 " Install and load bundles
 call dein#add('tpope/vim-surround')
-call dein#add('scrooloose/nerdcommenter')
+call dein#add('tpope/vim-commentary')
 call dein#add('Shougo/unite.vim')
 call dein#add('altercation/vim-colors-solarized')
 call dein#add('tpope/vim-fugitive')
