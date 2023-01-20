@@ -37,6 +37,7 @@ call dein#add('sickill/vim-pasta')
 call dein#add('sheerun/vim-polyglot')
 call dein#add('justinmk/vim-sneak')
 call dein#add('mbbill/undotree')
+call dein#add('ojroques/vim-oscyank')
 
 call dein#end()
 
@@ -145,3 +146,7 @@ endif
 if $TERM == 'tmux-256color'
   set termguicolors
 endif
+
+let g:oscyank_silent = v:true
+let g:oscyank_term = 'default'
+autocmd TextYankPost * if v:event.operator is 'y' && v:event.regname is '' | execute 'OSCYankReg "' | endif
