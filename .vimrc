@@ -141,3 +141,7 @@ if has("persistent_undo")
   set undodir=~/.vim/undo/
   set undofile
 endif
+
+if $TERM == 'tmux-256color'
+  set termguicolors
+endif
