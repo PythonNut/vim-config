@@ -22,7 +22,7 @@ call dein#begin(expand('~/.vim/.cache/dein//'))
 call dein#add('tpope/vim-surround')
 call dein#add('tpope/vim-commentary')
 call dein#add('Shougo/unite.vim')
-call dein#add('altercation/vim-colors-solarized')
+call dein#add('lifepillar/vim-solarized8')
 call dein#add('tpope/vim-fugitive')
 call dein#add('easymotion/vim-easymotion')
 
@@ -109,8 +109,7 @@ omap <Space>ge <Plug>(easymotion-gel)
 
 " Enable the awesome solarized colorscheme
 set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+colorscheme solarized8
 
 if has('lua')
   so ~/.vim/auto_completion.vim
